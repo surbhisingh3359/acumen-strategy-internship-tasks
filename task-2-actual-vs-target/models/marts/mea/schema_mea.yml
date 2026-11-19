@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_mea_actual_vs_target
+    description: "Compares MEA monthly targets with actual performance."
+    columns:
+      - name: unit
+        data_tests:
+          - not_null
+      - name: reporting_month
+        data_tests:
+          - not_null
+      - name: data_item
+        data_tests:
+          - not_null
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['hit', 'miss']
+              config:
+                severity: warn

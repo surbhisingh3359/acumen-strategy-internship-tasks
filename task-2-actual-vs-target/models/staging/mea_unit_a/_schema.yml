@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_mea_unit_a__actuals
+    description: "Standardized fictional actuals for MEA Unit A."
+    columns:
+      - name: unit
+        data_tests:
+          - not_null
+      - name: reporting_month
+        data_tests:
+          - not_null
+      - name: data_item
+        data_tests:
+          - not_null

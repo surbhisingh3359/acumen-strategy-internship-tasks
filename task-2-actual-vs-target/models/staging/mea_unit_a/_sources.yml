@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: mea_unit_a
+    description: "Fictional local actuals source for Task 2 testing."
+    schema: raw
+    tables:
+      - name: mea_unit_a_actuals

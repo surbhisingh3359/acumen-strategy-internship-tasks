@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: mea
+    description: "MEA monthly targets ingested from the fictional Baserow test data."
+    schema: mea_agreement
+    tables:
+      - name: agreements
